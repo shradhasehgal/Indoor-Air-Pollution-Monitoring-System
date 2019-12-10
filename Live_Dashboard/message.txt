@@ -1,0 +1,17 @@
+Dear User 
+
+The Air Quality Index (AQI) of your surroundings has risen to ${AQI} when the permissible value is 150. 
+The equivalent concentrations are:
+
+1. PM2.5 : ${PM25}
+2. PM10 : ${PM10}
+3. CO : ${CO} 
+4. NO2 is ${NO2}
+
+
+Active children and adults, and people with respiratory disease, such as asthma, should limit prolonged outdoor exertion.
+
+Kindly take care and stay safe.
+
+Regards
+Team no. 10

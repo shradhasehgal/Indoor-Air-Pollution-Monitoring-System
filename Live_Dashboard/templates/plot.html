@@ -1,0 +1,52 @@
+
+<html>
+	<head>
+			<link rel="shortcut icon" href="{{ url_for('static', filename='img/logo.png') }}" />
+			<title>Data Collection Dashboard</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Heebo|Roboto:900|PT+Serif:700|Palatino|Lobster|Cardo:700|Hind:400,500|Playfair+Display:400,700&display=swap" rel="stylesheet">
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	</head>
+	
+	<body>
+		<h1> Live Updates! </h1>
+		<br>
+		<h2>AQI Index based on readings in the past hour: {{myaqi}}</h2>
+		
+		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.8352753131835!2d78.34756635096241!3d17.444807005678317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bce0a03f17ff82b%3A0x9d02e89b98deb496!2sIIIT%20Hyderabad!5e0!3m2!1sen!2sin!4v1574659324174!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+			<h3>You are presently here</h3>
+
+			
+
+			<br><br>
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873271/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873271/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873288/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873288/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873288/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873276/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873276/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873290/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line"></iframe>
+				
+					<iframe width="450" height="260" style="border: 2px solid #cccccc;" src="https://thingspeak.com/channels/873290/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+				
+		
+	</body>	
+
+</html>
