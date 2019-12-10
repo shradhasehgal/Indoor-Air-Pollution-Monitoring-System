@@ -1,0 +1,133 @@
+* {
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+html, body, #graphs{
+    height: 95%;
+    margin-top: 20px !important;
+    scroll-behavior: smooth;
+}
+
+body
+{
+	font-family: 'PT Serif', serif !important; 
+    text-align: center !important;
+    height: 100% !important;
+}
+
+.child
+{
+    background-image: url('img/map.png');
+    background-position:center;
+	background-repeat:no-repeat;
+    background-size:cover;
+    margin: auto;
+    position: relative;
+    width: 1179px;
+    height: 833px;
+}
+
+.mount {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    font-family: 'Lato', sans-serif;
+    cursor: move;
+}
+
+#demo {
+
+    font-family: 'PT Serif', serif;
+    font-size: 1.5em;
+}
+
+
+.smol
+{
+    width:75px;
+    height: 75px;
+    display:block;
+    cursor:move;
+}
+
+.legends
+{
+    display: block;
+    position: absolute;
+    top: 52%;
+    right: 2%;
+}
+td p{
+    background: white;
+    padding: 3px;
+}
+
+p{
+    background: white;
+}
+table, td,tr {
+    font-family: 'Lato', sans-serif;
+}
+
+.carousel{
+    max-width: 800px;
+    background: #2f4357;
+    margin-top: 20px;
+}
+.carousel-item{
+    text-align: center;
+    min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+.bs-example{
+    margin-left: 550px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#graphs {
+    display: none;
+}
+
+@media screen and (max-width: 700px)
+{
+    .smol {
+        margin: -1px;
+    }
+
+    p {
+        font-size: 0.75em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .mount {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    table, p{
+        font-size: 0.5em;
+    };
+}
+
+@media screen and (max-width: 400px) {
+    
+    .mount {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
