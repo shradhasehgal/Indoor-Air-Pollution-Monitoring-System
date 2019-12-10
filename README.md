@@ -4,9 +4,16 @@ A mobile indoor air quality monitoring system for measuring humidity, volatile o
 
 ## Features
 
-1. Live Dashboard - Real time graphs and AQI alerts 
+### Live Dashboard 
+- Real time graphs and AQI alerts 
+- For email alerts, edit `file.py` (in the `Live_Dashboard` folder) with your details
 
-    - For email alerts, edit `file.py` (in the `Live_Dashboard` folder) with your details
-2. Website - View old graphs based on locations in the IIIT-H campus
-3. Arduino folder contains the `.ino` scripts to dump onto the nodes - connects to OneM2M and Thingspeak and gets sensor readings
-4. Graphs Scripts - generates different graphs based on location and time
+### Website 
+- View old graphs based on locations in the IIIT-H campus
+
+### Arduino 
+- Arduino folder contains the `.ino` scripts to dump onto the nodes 
+- Scripts connect to OneM2M and Thingspeak and gets sensor readings
+
+### Graphs Scripts 
+- Python script to generate different graphs based on location and time
