@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="shortcut icon" href="img/logo.png" />
+        <title>ESW project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Heebo|Roboto:900|PT+Serif:700|Palatino|Lobster|Cardo:700|Hind:400,500|Playfair+Display:400,700&display=swap" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="heading">
+        <h1> Click on a location to view its graphs! </h1>
+    </div>    
+    <div class="child" id="map">
+        <p id="demo"></p>
+        <a href ="#graphs"><img class="mount" id="1" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a>
+        </div>
+        <a href ="#graphs"><img class="mount" id="2" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div>
+        <a href ="#graphs"><img class="mount" id="3" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div> 
+        <a href ="#graphs"><img class="mount" id="4" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div>
+        <a href ="#graphs"> <img class="mount" id="5" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div> 
+        <a href ="#graphs"><img class="mount" id="6" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div>            
+        <a href ="#graphs"><img class="mount" id="7" src ="img/icon.png" onmouseover ="loc($(this).attr('id'))" onmouseout ="noloc()" onclick = "val($(this).attr('id'))"></a></div>             
+    </div>
+
+    <div id = "graphs">
+        <!-- <div class="heading"> -->
+            <h1 id="graph"> Graphs for </h1>
+        <!-- </div>  -->
+        <div class="bs-example">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id = "img1" src="img/KRB/KRB_CO.png" alt="First Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img2" src="img/KRB/KRB_eCO2.png" alt="First Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img3" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img4" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img5" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img6" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img7" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img8" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img  id = "img9" src="img/KRB/KRB_PM10.png" alt="Third Slide">
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+</body>
+</html>
